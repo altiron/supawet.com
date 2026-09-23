@@ -15,6 +15,9 @@
          height:100vh; display:flex; flex-direction:column; }
   body::before { content:""; position:fixed; inset:0; z-index:-2;
          background:url("images/slider.jpg") center 30%/cover no-repeat; }
+  @media (max-width:640px) {
+    body::before { background-position:74% center; }
+  }
   body::after { content:""; position:fixed; inset:0; z-index:-1;
          background:linear-gradient(180deg, rgba(8,8,11,.45) 0%, rgba(8,8,11,.72) 40%, rgba(8,8,11,.94) 100%); }
   header { padding:22px 28px; border-bottom:1px solid var(--line); display:flex; align-items:center; gap:14px;
